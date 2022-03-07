@@ -1,5 +1,5 @@
 MACHINE ??= 'maaxboard-ddr4-2g-sdcard'
-DISTRO ?= 'fsl-imx-xwayland-lite'
+DISTRO ?= 'fsl-imx-xwayland'
 # "ipk", "rpm", "deb", or "tar"
 PACKAGE_CLASSES ?= "package_deb"
 USER_CLASSES ?= "buildstats image-mklibs image-prelink"
