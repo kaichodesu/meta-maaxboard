@@ -1,3 +1,7 @@
+#NOTE BEFORE BUILDING
+RAM usage scales with CPU THREADS.  With 24 threads I use 60GB of RAM.
+I also recommend you have at least 200GB free disk space (Preferably NVMe), with 100GB being the bare minimum.
+
 # meta-maaxboard
 
 A meta-layer for the MaaXBoard running XWayland. This is eIQ(NXP eIQ Machine Learning) branch. It could build a image including the eIQ softwares:
