@@ -65,7 +65,7 @@ $ sudo apt-get update && sudo apt-get install -y \
 Install repo
 
 ```bash
-sudo apt isntall repo
+sudo apt install repo
 sudo chmod 777 /usr/bin/repo
 sudo curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo
 sudo chmod a+x /usr/bin/repo
