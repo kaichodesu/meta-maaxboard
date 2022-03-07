@@ -84,7 +84,10 @@ repo sync
 ```
 
 Edit /sources/meta-imx/meta-ml/recipes-libraries/armnn/armnn-onnx_1.3.0.bb
+
+```bash
 SRC_URI = "git://github.com/onnx/onnx.git;branch=main"
+```
 
 Clone this repo
 
