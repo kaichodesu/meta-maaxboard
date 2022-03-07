@@ -83,6 +83,9 @@ repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linu
 repo sync
 ```
 
+Edit /sources/meta-imx/meta-ml/recipes-libraries/armnn/armnn-onnx_1.3.0.bb
+SRC_URI = "git://github.com/onnx/onnx.git;branch=main"
+
 Clone this repo
 
 ```bash
