@@ -27,7 +27,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     nano \
     dhcpcd \
     git \
-    geany \
+    geany \ 
     e2fsprogs-resize2fs \
     parted \
     man-db \
