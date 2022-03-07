@@ -19,7 +19,7 @@ A meta-layer for Embest MaaXBoard.
 ## How to
 
 ### Install Host Yocto Development Env
-Running WSL2.0 Ubuntu 18.04
+Running WSL2.0 Ubuntu 18.04 (20.04 has issues with the python-pysqlite2 package)
 
 ```bash
 $ sudo apt-get update && sudo apt-get install -y \
@@ -146,12 +146,10 @@ $ cd /path/to/bsp_dir/
 $ source sources/poky/oe-init-build-env maaxboard/build
 
 $ bitbake lite-image-qt5
-```
-If 
-```bash
-Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
-```
-Then execute
+``` 
+> NOTE: If you receive an error: 
+> Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+> Then execute
 ```bash
 export GIT_SSL_NO_VERIFY=1
 git config --global http.sslverify false
