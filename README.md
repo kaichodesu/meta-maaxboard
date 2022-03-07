@@ -1,6 +1,6 @@
 # meta-maaxboard
 
-A meta-layer for Embest MaaXBoard. This is eIQ(NXP eIQ Machine Learning) branch. It could build a image including the eIQ softwares:
+A meta-layer for the MaaXBoard running XWayland. This is eIQ(NXP eIQ Machine Learning) branch. It could build a image including the eIQ softwares:
 
 - OpenCV 4.0.1
 - Arm Compute Library 19.02
