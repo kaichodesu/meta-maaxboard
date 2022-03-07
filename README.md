@@ -83,23 +83,23 @@ repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linu
 repo sync
 ```
 
-Edit /sources/meta-imx/meta-ml/recipes-libraries/armnn/armnn-onnx_1.3.0.bb
-
-```bash
-SRC_URI = "git://github.com/onnx/onnx.git;branch=main"
-```
-
 Clone this repo
 
 ```bash
 $ cd sources
-$ git clone https://github.com/Avnet/meta-maaxboard.git
+$ git clone https://github.com/kaichodesu/meta-maaxboard.git
 ```
 
 Clone imx machinelearning repo
 ```bash
 $ cd sources
 $ git clone -b sumo https://source.codeaurora.org/external/imx/meta-imx-machinelearning.git
+```
+
+Edit /sources/meta-imx/meta-ml/recipes-libraries/armnn/armnn-onnx_1.3.0.bb
+
+```bash
+SRC_URI = "git://github.com/onnx/onnx.git;branch=main"
 ```
 
 ### Do patch
