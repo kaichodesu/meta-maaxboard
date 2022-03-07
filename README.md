@@ -147,6 +147,14 @@ $ source sources/poky/oe-init-build-env maaxboard/build
 
 $ bitbake lite-image-qt5
 ```
+If 
+```bash
+Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+```
+Then execute
+```bash
+export GIT_SSL_NO_VERIFY=1
+```
 
 ### Flash sdcard
 
