@@ -154,7 +154,9 @@ Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.c
 Then execute
 ```bash
 export GIT_SSL_NO_VERIFY=1
+git config --global http.sslverify false
 ```
+(This is why you should use a VM or WSL)
 
 ### Flash sdcard
 
