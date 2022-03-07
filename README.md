@@ -12,11 +12,14 @@ A meta-layer for Embest MaaXBoard. This is eIQ(NXP eIQ Machine Learning) branch.
 Below will show you how to setup Yocto Development Env and how to build the eIQ image.
 
 
+# meta-maaxboard
+
+A meta-layer for Embest MaaXBoard.
+
 ## How to
 
 ### Install Host Yocto Development Env
-
-You should have a linux machine, below instructions show how to setup the env on a Ubuntu:18.04 machine.
+Running WSL2.0 Ubuntu 18.04
 
 ```bash
 $ sudo apt-get update && sudo apt-get install -y \
@@ -62,19 +65,22 @@ $ sudo apt-get update && sudo apt-get install -y \
 Install repo
 
 ```bash
+sudo apt isntall repo
+sudo chmod 777 /usr/bin/repo
 sudo curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo
 sudo chmod a+x /usr/bin/repo
 ```
 
-### Fetch the source
+### Fetch source
 
 Download meta layers from NXP
 
 ```bash
 mkdir imx-yocto-bsp
-$ cd imx-yocto-bsp
-$ repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-sumo -m imx-4.14.98-2.2.0.xml
-$ repo sync
+sudo chmod 777 /imx-yocto-bsp/
+cd imx-yocto-bsp
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-sumo -m imx-4.14.98-2.2.0.xml
+repo sync
 ```
 
 Clone this repo
@@ -101,15 +107,6 @@ $ cd imx-yocto-bsp
 $ mkdir imx8mqevk
 $ DISTRO=fsl-imx-wayland MACHINE=imx8mqevk source fsl-setup-release.sh -b imx8mqevk
 $ rm -rf imx8mqevk
-```
-
-Or if you're going to build MaaXBoard Mini
-
-```bash
-$ cd imx-yocto-bsp
-$ mkdir imx8mmevk
-$ DISTRO=fsl-imx-wayland MACHINE=imx8mmevk source fsl-setup-release.sh -b imx8mmevk
-$ rm -rf imx8mmevk
 ```
 
 ###  Build configure
