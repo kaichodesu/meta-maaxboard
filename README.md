@@ -274,3 +274,14 @@ if __name__ == '__main__':
 ```
 
 [nxp]:https://www.nxp.com.cn/docs/en/nxp/user-guides/UM11226.pdf
+
+# Troubleshooting
+## Build process
+
+![image](https://user-images.githubusercontent.com/96273750/157215250-8109fc55-54af-484a-be57-51514c4e6f5c.png)
+[log_check] E: This is not a valid DEB archive, missing 'data.tar' member
+Execute
+```bash
+bitbake -c cleansstate {PACKAGENAME}
+bitbake {PACKAGENAME}
+```
