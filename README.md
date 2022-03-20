@@ -86,12 +86,21 @@ cd imx-yocto-bsp
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-sumo -m imx-4.14.98-2.2.0.xml
 repo sync
 ```
+If you get CA authority error
+```
+export GIT_SSL_NO_VERIFY=1
+git config --global http.sslverify false
+```
 
 Clone this repo
 
 ```bash
 $ cd sources
 $ git clone https://github.com/kaichodesu/meta-maaxboard.git
+```
+If you get port 9418 error
+```bash
+$ git config --global url."https://github.com/".insteadOf git://github.com/
 ```
 
 Clone imx machinelearning repo
